@@ -1,11 +1,6 @@
 ##Create an Empty class named 'Person'
-
-
-
-
-
-
-
+class Person
+end
 
 
 ##Define three properties on that class 'name','age','birthdate'
