@@ -4,7 +4,7 @@
 #**TODO ENTER CODE**
 # * Output all the methods of the Enumerable class to the console
 
-
+puts Enumberable.methods
 
 
 
@@ -15,7 +15,11 @@
 #   This means that the class you create...say Person... will respond to Person.each.
 # * use a normal each loop to iterate over the class and output the names to the console.
 
-
+class Persons
+	def each
+		['brooke','fox','alice','brooke fox'].map {|a| puts a}
+	end
+end
 
 
 
@@ -25,7 +29,6 @@
 # **TODO ENTER CODE**
 # * Find a name starting with 'a', you will need to include the Enumerable module into Persons, make sure you have a name
 #   starting with 'a'
-
 
 
 
@@ -47,32 +50,20 @@
 
 
 
-
-
 # **TODO ENTER CODE**
 # * Create an array of numbers 1-10
 # * Search an array to find all matches for numbers greater than 5
 
-
-
-
-
-
-
-
+array = (1..10).to_a
+array.find {|a| a > 5 }
 
 
 # **TODO ENTER CODE**
 # * Do the opposite as above, using the exact same block, but a different method, return all numbers that are less
 #   than 5
 
-
-
-
-
-
-
-
+another_array = (1..10).to_a
+another_array.each { |a| puts a if a < 5 }
 
 
 # **TODO ENTER CODE**
@@ -80,3 +71,5 @@
 # * Using a regex search the array to see which entries contain 'o'
 
 
+colors = ['red','orange','yellow','green','violet','indigo']
+colors.select{ |i| i[/o/] }
